@@ -1,0 +1,8 @@
+{
+  "name": "monorepo-example",
+  "author": "Bernd Artmüller <berndartmueller@gmail.com>",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
