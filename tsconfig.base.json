@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "lib": ["ESNext"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strict": true,
+    "declaration": true,
+    "composite": true,
+    "incremental": true,
+    "noEmit": false,
+    "baseUrl": ".",
+    "paths": {
+      "@monorepo-example/shared": ["./packages/shared/src"],
+      "@monorepo-example/shared/*": ["./packages/shared/src/*"]
+    },
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/dist",
+  ]
+}

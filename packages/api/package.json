@@ -1,7 +1,19 @@
 {
   "name": "@monorepo-example/api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
-  "dependencies": {}
+  "scripts": {
+    "build": "tsc --build",
+    "start": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "@monorepo-example/shared": "*"
+  },
+  "_moduleAliases": {
+    "@monorepo-example/shared/": "../../packages/shared/src"
+  },
+  "devDependencies": {
+    "@vercel/node": "^1.8.5"
+  }
 }
