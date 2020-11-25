@@ -7,7 +7,7 @@
     "buildd": "tsc --build",
     "nft": "ts-node ./src/test.ts",
     "start": "node ./dist/index.js",
-    "postinstall": "ls -la ../../node_modules/@monorepo-example/shared && mkdir -p node_modules/@monorepo-example/shared && cp -RL ../../node_modules/@monorepo-example/shared node_modules/@monorepo-example/shared"
+    "postinstall": "ls -la ../../node_modules/@monorepo-example/shared && mkdir -p node_modules/@monorepo-example && cp -RL ../../node_modules/@monorepo-example/shared node_modules/@monorepo-example"
   },
   "dependencies": {
     "@monorepo-example/shared": "1.0.0"
